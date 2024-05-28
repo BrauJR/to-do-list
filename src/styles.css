@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    /* Agregamos el degradado blanco y la imagen de fondo */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./Lista-de-tareas.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100%; /* Asegura que el elemento html ocupe toda la altura de la pantalla */
+  }
+  
+body {
+    @apply  text-white;
+    font-family: "Montserrat", sans-serif;
+}
