@@ -11,24 +11,7 @@ import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 })
 export class TodoComponent {
   todoList = signal<TodoModel[]>([
-    {
-      id: 1,
-      title: "Comprar leche",
-      completed: false,
-      editing: false
-    },
-    {
-      id: 2,
-      title: "Comprar pan",
-      completed: false,
-      editing: false
-    },
-    {
-      id: 3,
-      title: "Comprar queso",
-      completed: false,
-      editing: false
-    },
+  
   ]);
 
   filter = signal<FilterType>('all');
